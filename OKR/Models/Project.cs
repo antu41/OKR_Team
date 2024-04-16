@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.VisualBasic;
+using System.ComponentModel.DataAnnotations;
 
 namespace OKR.Models
 {
@@ -9,5 +10,6 @@ namespace OKR.Models
         public string ProjectName { get; set; } = string.Empty;
         public string? FilePath { get; set; } = string.Empty;
         public string? Description { get; set;} = string.Empty;
+        public ICollection<Milestone> Milestones { get; set; } = new List<Milestone>();
     }
 }

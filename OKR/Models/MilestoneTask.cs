@@ -11,6 +11,9 @@
         public string? Tag { get; set; } = string.Empty ;
         public string AssigneeId { get; set; } = string.Empty;
         public TeamMember? Assignee { get; set; }
+        public ICollection<MilestoneSubTask> SubTasks { get; set; } = new List<MilestoneSubTask>();
+        public string MilestoneId { get; set; } = string.Empty;
+        public Milestone? Milestone { get; set; }
          
     }
     public enum Priority 

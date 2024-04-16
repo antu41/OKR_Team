@@ -11,5 +11,8 @@ namespace OKR.Models
 
         public string AssigneeId { get; set; } = string.Empty;
         public TeamMember? Assignee { get; set; }
+        public ICollection<MilestoneTask> MilestoneTasks { get; set; } = new List<MilestoneTask>();
+        public string ProjectId { get; set; } = string.Empty;
+        public Project? Project { get; set; }
     }
 }
