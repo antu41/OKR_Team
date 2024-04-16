@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OKR.props" />
+</Project>
