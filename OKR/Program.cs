@@ -36,6 +36,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Project}/{action=Create}/{id?}");
+    pattern: "{controller=Milestone}/{action=CreateMilestone}/{id?}");
 
 app.Run();

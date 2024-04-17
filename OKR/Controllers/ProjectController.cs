@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using OKR.Models;
 using OKR.Models.ViewModels;
 using OKR.Repository.Interface;
@@ -40,10 +41,7 @@ namespace OKR.Controllers
                    // FilePath = item.FilePath,
                     Description = item.Description
                 };
-
-                // Save the project to the database
-                await repo.AddAsync(project);
-                await repo.SaveAsync();
+                await repo.Create(project);
 
             foreach (var assigneeId in item.AssigneeId)
             {
@@ -52,17 +50,17 @@ namespace OKR.Controllers
                     ProjectId = project.Id,
                     AssigneeId = assigneeId
                 };
-
-                // Save the team member to the database
-                await trepo.AddAsync(teamMember);
+                await trepo.Create(teamMember);
 
             }
-                // Save changes to the database
-                await trepo.SaveAsync();
-
-                // Redirect to create action
                 return View();
 
+        }
+
+        public async Task<IActionResult> GetProjects()
+        {
+            var projects = await repo.GetAllAsync();
+            return Ok(projects);
         }
 
     }

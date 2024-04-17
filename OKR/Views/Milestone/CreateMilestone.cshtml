@@ -1,0 +1,341 @@
+﻿@{
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-2">
+            <div class="sidebar">
+@*                 <div class="text-center mt-3">
+                    <img class="img-fluid" src="~/assests/img/Logo.png" alt="Logo">
+                </div> *@
+                <ul class="list-unstyled">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-house-door-fill mr-2"></i> <span class="custom-text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-folder-fill mr-2"></i> <span class="custom-text">Projects</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-people-fill mr-2"></i> <span class="custom-text">People</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class="bi bi-grid-fill mr-2"></i> <span class="custom-text">Templates</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-10">
+            <div class="row pt-4">
+                <div class="col-lg-3">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search..." aria-label=" Search" aria-describedby="button-addon2" onkeydown="if(event.keyCode == 13) { event.preventDefault(); searchFunction(); }">
+                    </div>
+                </div>
+                <div class="col-lg-9 mr-3 text-end">
+
+                    <button type="button" class="btn btn-success"><i class="bi bi-plus-lg"></i>Add Template</button>
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-lg-9">
+                    <div class="col-lg-12">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="List-tab" data-toggle="tab" href="#List" role="tab" aria-controls="List" aria-selected="true">List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="understanding-tab" data-toggle="tab" href="#understanding" role="tab" aria-controls="understanding" aria-selected="false">Understanding</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="message-tab" data-toggle="tab" href="#message" role="tab" aria-controls="message" aria-selected="false">Message Board</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="doc&file-tab" data-toggle="tab" href="#doc&file" role="tab" aria-controls="doc&file" aria-selected="false">Doc & File</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="myTabContent">
+
+                            <div class="tab-pane fade show active pt-3" id="List" role="tabpanel" aria-labelledby="List-tab">
+                                <button type="button" class="btn btn-light" id="addMilestoneBtn">
+                                    <i class="fas fa-plus"></i> Add Milestone
+                                </button>
+
+                                <!-- Offcanvas structure -->
+                                <div class="offcanvas offcanvas-end" tabindex="-1" id="milestoneOffcanvas">
+                                    <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title">Add Milestone</h5>
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-9">
+                                            <div class="offcanvas-body" ">
+                                                <!-- Milestone form -->
+                                                <form>
+                                                    <div class="mb-3">
+
+                                                        <input type="text" class="form-control" id="milestoneName" placeholder="Enter milestone name">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="milestoneDescription" class="form-label">Description</label>
+                                                        <textarea class="form-control" id="milestoneDescription" rows="3" placeholder="Enter description"></textarea>
+                                                    </div>
+                                                    <!-- Button container -->
+
+                                                </form>
+
+                                                <form>
+                                                    <div class=" add-task pt-4">
+                                                        <div class="row">
+                                                            <div class="col-lg-4 pt-2"><i class="bi bi-check2-circle"></i>  <input type="text" class="form-control" id="taskName" placeholder="Enter Task name"> </div>
+                                                            <div class="col-lg-1 pt-2"><i class="bi bi-person-add fs-5"></i></div>
+                                                            <div class="col-lg-4">
+                                                                <button type="button" class="btn btn-outline-secondary" id="taskdueDate" onclick="showDateTimePicker()">
+                                                                    <i class="bi bi-calendar"></i> Due Date
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-lg-3">
+                                                                <button type="button" class="btn btn-outline-secondary">
+                                                                    <i class="bi bi-trash"></i> Delete
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-12 pt-3">
+                                                            <div class="progress">
+                                                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: green;">
+                                                                    75%
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row pt-3">
+                                                            <div class="col-lg-4">
+                                                                <div class="priority-container">
+                                                                    <label for="prioritySelect">Priority</label>
+                                                                    <select class="form-control" id="prioritySelect">
+                                                                        <option value="High">High</option>
+                                                                        <option value="Medium">Medium</option>
+                                                                        <option value="Low">Low</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4">
+                                                                <div class="dependeny-container">
+                                                                    <label for="dependenySelect">Dependeny</label>
+                                                                    <select class="form-control" id="dependenySelect">
+                                                                        <option value="High">1</option>
+                                                                        <option value="Medium">2</option>
+                                                                        <option value="Low">3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 text-end">
+                                                                <label for="attachmentInput" class="btn mt-4 btn-outline-secondary mb-3">
+                                                                    <i class="bi bi-paperclip"></i> Attachment
+                                                                    <input type="file" id="attachmentInput" class="d-none" multiple>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                </form>
+                                                <form>
+                                                    <div class="row pt-3">
+                                                        <div class="col-lg-4 pt-2 text-end">
+                                                            <i class="bi bi-check2-circle"></i><input type="text" class="form-control" id="subtaskName" placeholder="Enter Sub Task name">
+                                                        </div>
+                                                        <div class="col-lg-2 pt-2">
+                                                            <i class="bi bi-clock" id="subtaskEstimatedtime"></i>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <button type="button" class="btn btn-outline-secondary" id="subtaskDuedate" onclick="showDateTimePicker()">
+                                                                <i class="bi bi-calendar"></i> Due Date
+                                                            </button>
+
+                                                        </div>
+                                                        <div class="col-lg-2">
+                                                            <i class="bi bi-person-add fs-3 " id="subtaskAssignee"></i>
+
+                                                        </div>
+                                                        <div class="col-lg-1">
+                                                            <i class="bi bi-three-dots-vertical fs-4"></i>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <button type="button" class="btn mt-3  btn-outline-secondary">
+                                                        <i class="bi bi-plus"></i> Sub Task
+                                                    </button>
+
+                                            </div>
+                                            </form>
+
+                                            <div class="text-end mt-3">
+                                                <button type="button" class="btn btn-secondary mr-2" data-bs-dismiss="offcanvas">Cancel</button>
+                                                <button type="button" class="btn btn-primary" onclick="addMilestone()">Create</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <button type="button" class="btn btn-outline-success mb-3"><i class="bi bi-person-add"></i> Add Member</button>
+                                        <button type="button" class="btn btn-outline-success mb-3"><i class="bi bi-check2-circle"></i> Add Task</button>
+                                        <label for="attachmentInput" class="btn btn-outline-secondary mb-3">
+                                            <i class="bi bi-paperclip"></i> Attachment
+                                            <input type="file" id="attachmentInput" class="d-none" multiple>
+                                        </label>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="understanding" role="tabpanel" aria-labelledby="understanding-tab">Content for Understanding tab</div>
+                        <div class="tab-pane fade" id="message" role="tabpanel" aria-labelledby="message-tab">Content for Message Board tab</div>
+                        <div class="tab-pane fade" id="doc&file" role="tabpanel" aria-labelledby="doc&file-tab">Content for Doc & File tab</div>
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="col-lg-3">
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+
+<style>
+    /* Adjust sidebar width as needed */
+
+    /* Style for the navigation items */
+    .nav-link {
+        color: black; /* Change the color as needed */
+    }
+        /* Hover effect for the navigation items */
+        .nav-link:hover {
+            background-color: #f8f9fa; /* Change the background color as needed */
+        }
+        /* Active state for the navigation items */
+        .nav-link.active {
+            background-color: #e9ecef; /* Change the background color as needed */
+        }
+
+    .offcanvas-header {
+        justify-content: space-between;
+    }
+
+    #milestoneOffcanvas {
+        margin-top: 75px;
+        width: 803px;
+        overflow-y: auto;
+    }
+
+</style>
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            For navigation tabs
+            $('.nav-link').click(function (event) {
+                event.preventDefault();
+                const tabContentId = $(this).attr('href').substring(1);
+                const tabContent = $(`#${tabContentId}`);
+                if (tabContent.length) {
+                    $('.tab-pane').removeClass('show active');
+                    tabContent.addClass('show active');
+                }
+            });
+
+
+            function addMilestone() {
+                var objData = {
+                    milestoneName: $('#milestoneName').val(),
+                    milestoneDescription: $('#milestoneDescription').val(),
+                    taskName: $('#taskName').val(),
+                    taskDuedate: $('#taskueDate').val(),
+                    prioritySelect: $('#prioritySelect').val(),
+                    dependenySelect: $('#dependenySelect').val(),
+                    attachmentInput: $('#attachmentInput').val(),
+                    subtaskName: $('#subtaskName').val(),
+                    subtaskEstimatedtime: $('#subtaskEstimatedtime').val(),
+                    subtaskDuedate: $('#subtaskDuedate').val(),
+                    subtaskAssignee: $('#subtaskAssignee').val(),
+                };
+
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/Milestone/CreateMilestone', // Replace with the actual path to your server-side script
+                    data: JSON.stringify(objData),
+                    contentType: 'application/json',
+                    success: function (response) {
+                        alert('Project created successfully');
+                        clear();
+                        hideMilestoneOffcanvas();
+                    },
+                    error: function () {
+                        alert("Failed to create project");
+                    }
+                });
+            }
+
+            function showDateTimePicker() {
+                // Show Bootstrap date and time picker modal
+                $('#dueDateTimeModal').modal('show');
+            }
+            function setDueDateTime() {
+                // Get selected date and time from pickers
+                var selectedDate = $('#datepicker').val();
+                var selectedTime = $('#timepicker').val();
+                // Set the value of the hidden input fields
+                $('#dueDateInput').val(selectedDate);
+                $('#dueTimeInput').val(selectedTime);
+                // Hide the modal
+                $('#dueDateTimeModal').modal('hide');
+            }
+
+            function subshowDateTimePicker() {
+                // Show Bootstrap date and time picker modal
+                $('#subdueDateTimeModal').modal('show');
+            }
+
+            function setDueDateTime() {
+                // Get selected date and time from pickers
+                var selectedDate = $('#subdatepicker').val();
+                var selectedTime = $('#subtimepicker').val();
+                // Set the value of the hidden input fields
+                $('#subdueDateInput').val(selectedDate);
+                $('#subdueTimeInput').val(selectedTime);
+                // Hide the modal
+                $('#subdueDateTimeModal').modal('hide');
+            }
+
+
+
+            function hideMilestoneOffcanvas() {
+                var milestoneOffcanvas = new bootstrap.Offcanvas(document.getElementById('milestoneOffcanvas'));
+                milestoneOffcanvas.hide();
+            }
+
+            function clear() {
+                $('#name').val('');
+                $('#assignee').val('').trigger('change');
+                $('#attachment').val('');
+                $('#description').val('');
+            }
+
+            // When the "Add Milestone" button is clicked
+            $('#addMilestoneBtn').click(function () {
+                var milestoneOffcanvas = new bootstrap.Offcanvas(document.getElementById('milestoneOffcanvas'));
+                milestoneOffcanvas.show();
+            });
+        });
+    </script>
+                                            }
