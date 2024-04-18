@@ -178,7 +178,7 @@
 
                                             <div class="text-end mt-3">
                                                 <button type="button" class="btn btn-secondary mr-2" data-bs-dismiss="offcanvas">Cancel</button>
-                                                <button type="button" class="btn btn-primary" onclick="addMilestone()">Create</button>
+                                                <button type="button" class="btn btn-primary" onclick="AddMilestone();">Create</button>
                                             </div>
                                         </div>
                                     </div>
@@ -242,7 +242,7 @@
 @section Scripts {
     <script>
         $(document).ready(function () {
-            For navigation tabs
+            //For navigation tabs
             $('.nav-link').click(function (event) {
                 event.preventDefault();
                 const tabContentId = $(this).attr('href').substring(1);
@@ -252,9 +252,10 @@
                     tabContent.addClass('show active');
                 }
             });
+        });
 
 
-            function addMilestone() {
+            function AddMilestone() {
                 var objData = {
                     milestoneName: $('#milestoneName').val(),
                     milestoneDescription: $('#milestoneDescription').val(),
@@ -336,6 +337,6 @@
                 var milestoneOffcanvas = new bootstrap.Offcanvas(document.getElementById('milestoneOffcanvas'));
                 milestoneOffcanvas.show();
             });
-        });
+        
     </script>
-                                            }
+}

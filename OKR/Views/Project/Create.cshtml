@@ -1,4 +1,4 @@
-﻿@*
+﻿﻿@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
@@ -12,9 +12,6 @@
     </div>
 </div>
 
-@* <div id="example-table"></div> *@
-
-<div id="project-container"></div>
 
 <div class="modal fade" id="ProjectModal" tabindex="-1" aria-labelledby="createProjectModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -74,74 +71,47 @@
                 $(this).next('.custom-file-label').html(fileName);
             });
 
-            $.ajax({
-                url: '/Project/GetProjects',
-                type: 'GET',
-                success: function (data) {
-                    // Clear previous content
-                    $('#project-container').empty();
-                    // Iterate through projects and create cards
-                    $.each(data, function (index, project) {
-                        var card = '<div class="col-md-4">' +
-                            '<div class="card mb-4">' +
-                            '<div class="card-body">' +
-                            '<h5 class="card-title">' + project.projectName + '</h5>' +
-                            '<p class="card-text">' + project.description + '</p>' +
-                            '</div>' +
-                            '</div>' +
-                            '</div>';
-                        $('#project-container').append(card);
-                    });
-                },
-                error: function (xhr, status, error) {
-                    console.error(xhr.responseText);
-                }
-            });
+            function CreateProject() {
+                var objData = {
+                    ProjectName: $('#name').val(),
+                    AssigneeId: $('#assignee').val(),
+                    //FilePath: $('#attachment').val(),
+                    Description: $('#description').val()
+                };
 
-        });
+                $.ajax({
+                    url: '/Project/Create',
+                    type: 'Post',
+                    data: JSON.stringify(objData),
+                    contentType: 'application/json',
+                    success: function (response) {
+                        alert('Project created successfully');
+                        clear();
+                        Hide();
 
-        function CreateProject() {
-            var objData = {
-                ProjectName: $('#name').val(),
-                AssigneeId: $('#assignee').val(),
-                //FilePath: $('#attachment').val(),
-                Description: $('#description').val()
-            };
+                    },
+                    error: function () {
+                        alert("Failed to create project");
+                    }
+                });
+            }
 
-            $.ajax({
-                url: '/Project/Create',
-                type: 'Post',
-                data: JSON.stringify(objData),
-                contentType: 'application/json',
-                success: function (response) {
-                    alert('Project created successfully');
-                    clear();
-                    Hide();
+            function Hide() {
+                $('#ProjectModal').modal('hide');
+            }
 
-                },
-                error: function () {
-                    alert("Failed to create project");
-                }
-            });
-        }
-
-        function Hide() {
-            $('#ProjectModal').modal('hide');
-        }
-
-        function clear() {
-            $('#name').val('');
-            $('#assignee').val('').trigger('change');
-            $('#attachment').val('');
-            $('#description').val('');
-        }
+            function clear() {
+                $('#name').val('');
+                $('#assignee').val('').trigger('change');
+                $('#attachment').val('');
+                $('#description').val('');
+            }
 
 
 
 
+        })
 
-           
 
     </script>
 }
-

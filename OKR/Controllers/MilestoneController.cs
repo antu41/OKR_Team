@@ -57,7 +57,7 @@ namespace OKR.Controllers
         public async Task<IActionResult> AddMember()
         {
             ViewBag.Assignee = new SelectList(await erepo.GetAllAsync(), "Id", "EmpName");
-            return View();
+            return RedirectToAction("CreateMilestone");
         }
 
         public IActionResult CreateMilestone()
@@ -68,7 +68,7 @@ namespace OKR.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> SaveMilestoneData(MilestoneViewModel item)
+        public async Task<IActionResult> SaveMilestoneData([FromBody]MilestoneViewModel item)
         {
             //if (ModelState.IsValid)
             //{
@@ -90,7 +90,7 @@ namespace OKR.Controllers
             //        await srepo.Create(subtask);
             //    }
 
-            //   return RedirectToAction(nameof(EditContext), new { id = projectId });
+            //    return RedirectToAction(nameof(EditContext), new { id = projectId });
             //}
 
             //// If model state is not valid, return to the form view
@@ -102,9 +102,10 @@ namespace OKR.Controllers
             //    MilestoneTasks = milestoneTasks,
             //    MilestoneSubTasks = milestoneSubTasks
             //});
-            //}
             return Json(item);
         }
+           
+        
 
     }
 }
