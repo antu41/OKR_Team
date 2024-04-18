@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using OKR.Models;
 using OKR.Models.ViewModels;
@@ -54,11 +55,11 @@ namespace OKR.Controllers
         //    return View();
         //}
 
-        public async Task<IActionResult> AddMember()
-        {
-            ViewBag.Assignee = new SelectList(await erepo.GetAllAsync(), "Id", "EmpName");
-            return RedirectToAction("CreateMilestone");
-        }
+        //public async Task<IActionResult> AddMember()
+        //{
+        //    ViewBag.Assignee = new SelectList(await erepo.GetAllAsync(), "Id", "EmpName");
+        //    return RedirectToAction("CreateMilestone");
+        //}
 
         public IActionResult CreateMilestone()
         {
@@ -67,45 +68,94 @@ namespace OKR.Controllers
         }
 
 
-        [HttpPost]
-        public async Task<IActionResult> SaveMilestoneData([FromBody]MilestoneViewModel item)
+        //[HttpPost]
+        //public async Task<IActionResult> CreateMilestone([FromBody]MilestoneViewModel item)
+        //{
+        //    var Milestone = new Milestone
+        //    {
+        //        Name = item.MilestoneName,
+        //        Description = item.MilestoneDescription,
+        //       // ProjectId = item.ProjectId,
+        //    };
+        //    await mrepo.Create(Milestone);
+        //    var Task = new MilestoneTask
+        //    {
+        //        Name = item.TaskName,
+        //        // Priority = item.Priority,
+        //        // Dependency = item.Dependency,
+        //        // Tag = item.Tag, 
+        //        //Milestone = Milestone,
+        //        // MilestoneId = item.MilestoneId,
+        //    };
+        //    await trepo.Create(Task);
+        //    var STask = new MilestoneSubTask
+        //    {
+        //        Name = item.SubTaskName,
+        //        // IsCompleted = item.IsCompleted,
+        //        //  MilestoneTask = Task,
+        //        //MilestoneTaskId = item.MilestoneTaskId,
+        //    };
+        //    await srepo.Create(STask);
+
+        //    return View();
+        //}
+
+
+        [HttpPost("CreateMilestone/{projectId}")]
+        public IActionResult CreateMilestone(string projectId)
         {
-            //if (ModelState.IsValid)
+            //if (!ModelState.IsValid)
             //{
-            //    // Save milestone data
-            //    milestone.ProjectId = projectId;
-            //    await mrepo.Create(milestone);
-
-            //    // Save milestone task data
-            //    foreach (var task in milestoneTasks)
-            //    {
-            //        task.MilestoneId = milestone.Id;
-            //        await trepo.Create(task);
-            //    }
-
-            //    // Save milestone subtask data
-            //    foreach (var subtask in milestoneSubTasks)
-            //    {
-            //        subtask.MilestoneTaskId = milestone.Id;
-            //        await srepo.Create(subtask);
-            //    }
-
-            //    return RedirectToAction(nameof(EditContext), new { id = projectId });
+            //    return BadRequest(ModelState);
             //}
 
-            //// If model state is not valid, return to the form view
-            //// with the model data so user can correct errors
-            //ViewBag.ProjectId = projectId;
-            //return View("CreateMilestone", new MilestoneViewModel
+            //// Find the project by ID
+            //var project = prepo.GetById(projectId);
+
+            //if (project == null)
             //{
-            //    Milestone = milestone,
-            //    MilestoneTasks = milestoneTasks,
-            //    MilestoneSubTasks = milestoneSubTasks
-            //});
-            return Json(item);
+            //    return NotFound("Project not found");
+            //}
+
+            //// Create milestones
+            //foreach (var milestoneModel in milestones)
+            //{
+            //    var milestone = new Milestone
+            //    {
+            //        Name = milestoneModel.Name,
+            //        Description = milestoneModel.Description,
+            //        ProjectId = projectId, // Associate the milestone with the project
+            //        MilestoneTasks = new List<MilestoneTask>()
+            //    };
+
+            //    // Create tasks
+            //    foreach (var taskModel in milestoneModel.MilestoneTasks)
+            //    {
+            //        var task = new MilestoneTask
+            //        {
+            //            Name = taskModel.Name,
+            //            SubTasks = new List<MilestoneSubTask>()
+            //        };
+
+            //        // Create subtasks
+            //        foreach (var subtaskModel in taskModel.MilestoneSubTasks)
+            //        {
+            //            var subtask = new MilestoneSubTask
+            //            {
+            //                Name = subtaskModel.Name
+            //            };
+            //            task.SubTasks.Add(subtask);
+            //        }
+
+            //        milestone.MilestoneTasks.Add(task);
+            //    }
+
+            //    mrepo.Create(milestone);
+            //}
+
+            return Ok("Milestones created successfully");
         }
-           
-        
+
 
     }
 }

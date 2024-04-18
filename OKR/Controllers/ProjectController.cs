@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using OKR.Models;
 using OKR.Models.ViewModels;
 using OKR.Repository.Interface;
+using System.Text.Json.Serialization;
+using System.Text.Json;
 
 namespace OKR.Controllers
 {
@@ -30,6 +32,18 @@ namespace OKR.Controllers
             return View();
         }
 
+        public ContentResult projectList()
+        {
+            var options = new JsonSerializerOptions
+            {
+                ReferenceHandler = ReferenceHandler.Preserve,
+                MaxDepth = 64 // Adjust the depth according to your needs
+            };
+
+            var data = repo.GetProjectDetails("bafbf86f-366c-4858-8f01-432c01fed344");
+            var jsonData = JsonSerializer.Serialize(data, options);
+            return Content(jsonData, "application/json");
+        }
 
         [HttpPost]
         public async Task<IActionResult> Create([FromBody]ProjectCreateViewModel item)

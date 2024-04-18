@@ -10,6 +10,6 @@ namespace OKR.Models
         public string ProjectName { get; set; } = string.Empty;
         public string? FilePath { get; set; } = string.Empty;
         public string? Description { get; set;} = string.Empty;
-        public ICollection<Milestone> Milestones { get; set; } = new List<Milestone>();
+        public ICollection<Milestone> Milestones { get; set; }
     }
 }

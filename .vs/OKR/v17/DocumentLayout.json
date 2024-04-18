@@ -3,32 +3,64 @@
   "WorkspaceRootPath": "D:\\Antu\\OKR_Team\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\views\\project\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\views\\project\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\views\\project\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\views\\milestone\\createmilestone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\views\\milestone\\createmilestone.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\repository\\implement\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\repository\\implement\\projectrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\models\\milestonetask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\models\\milestonetask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\models\\milestone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\models\\milestone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\repository\\interface\\iprojectrepositroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\repository\\interface\\iprojectrepositroy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\controllers\\milestonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\controllers\\milestonecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\views\\project\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\views\\project\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\models\\viewmodels\\milestoneviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\models\\viewmodels\\milestoneviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Antu\\OKR_Team\\OKR\\Migrations\\20240418105940_9th.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:OKR\\Migrations\\20240418105940_9th.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\models\\milestonesubtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\models\\milestonesubtask.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|d:\\antu\\okr_team\\okr\\migrations\\20240418081211_7th.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBD890D3-555B-45D9-885D-242DE0F00963}|OKR\\OKR.csproj|solutionrelative:okr\\migrations\\20240418081211_7th.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +70,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProjectRepository.cs",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Repository\\Implement\\ProjectRepository.cs",
+              "RelativeDocumentMoniker": "OKR\\Repository\\Implement\\ProjectRepository.cs",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Repository\\Implement\\ProjectRepository.cs",
+              "RelativeToolTip": "OKR\\Repository\\Implement\\ProjectRepository.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T12:28:31.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IProjectRepositroy.cs",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Repository\\Interface\\IProjectRepositroy.cs",
+              "RelativeDocumentMoniker": "OKR\\Repository\\Interface\\IProjectRepositroy.cs",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Repository\\Interface\\IProjectRepositroy.cs",
+              "RelativeToolTip": "OKR\\Repository\\Interface\\IProjectRepositroy.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T12:23:23.453Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -48,86 +106,166 @@
               "RelativeDocumentMoniker": "OKR\\Views\\Project\\Index.cshtml",
               "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Views\\Project\\Index.cshtml",
               "RelativeToolTip": "OKR\\Views\\Project\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAsAAAA",
+              "ViewState": "AQIAADQAAAAAAAAAAAAiwEQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-18T05:34:54.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Views\\Project\\Create.cshtml",
-              "RelativeDocumentMoniker": "OKR\\Views\\Project\\Create.cshtml",
-              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Views\\Project\\Create.cshtml",
-              "RelativeToolTip": "OKR\\Views\\Project\\Create.cshtml",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAADsAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-18T04:16:12.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ProjectController.cs",
-              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Controllers\\ProjectController.cs",
-              "RelativeDocumentMoniker": "OKR\\Controllers\\ProjectController.cs",
-              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Controllers\\ProjectController.cs",
-              "RelativeToolTip": "OKR\\Controllers\\ProjectController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAnwBYAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T04:05:51.15Z",
+              "WhenOpened": "2024-04-18T12:20:57.516Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "OKR\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "OKR\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAABMAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-17T09:07:52.343Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Program.cs",
+              "RelativeDocumentMoniker": "OKR\\Program.cs",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Program.cs",
+              "RelativeToolTip": "OKR\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAASwAoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:46:30.673Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateMilestone.cshtml",
-              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Views\\Milestone\\CreateMilestone.cshtml",
-              "RelativeDocumentMoniker": "OKR\\Views\\Milestone\\CreateMilestone.cshtml",
-              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Views\\Milestone\\CreateMilestone.cshtml",
-              "RelativeToolTip": "OKR\\Views\\Milestone\\CreateMilestone.cshtml",
-              "ViewState": "AQIAABEBAAAAAAAAAAAIwAABAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-17T05:28:17.138Z"
+              "DocumentIndex": 0,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "OKR\\Controllers\\ProjectController.cs",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "OKR\\Controllers\\ProjectController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAASwCsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T11:38:22.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20240418105940_9th.cs",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Migrations\\20240418105940_9th.cs",
+              "RelativeDocumentMoniker": "OKR\\Migrations\\20240418105940_9th.cs",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Migrations\\20240418105940_9th.cs",
+              "RelativeToolTip": "OKR\\Migrations\\20240418105940_9th.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwBcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T10:59:40.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Project.cs",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "OKR\\Models\\Project.cs",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Models\\Project.cs",
+              "RelativeToolTip": "OKR\\Models\\Project.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T08:16:09.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20240418081211_7th.cs",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Migrations\\20240418081211_7th.cs",
+              "RelativeDocumentMoniker": "OKR\\Migrations\\20240418081211_7th.cs",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Migrations\\20240418081211_7th.cs",
+              "RelativeToolTip": "OKR\\Migrations\\20240418081211_7th.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAQwGwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T08:12:11.564Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MilestoneSubTask.cs",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Models\\MilestoneSubTask.cs",
+              "RelativeDocumentMoniker": "OKR\\Models\\MilestoneSubTask.cs",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Models\\MilestoneSubTask.cs",
+              "RelativeToolTip": "OKR\\Models\\MilestoneSubTask.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T07:47:19.055Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "MilestoneTask.cs",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Models\\MilestoneTask.cs",
+              "RelativeDocumentMoniker": "OKR\\Models\\MilestoneTask.cs",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Models\\MilestoneTask.cs",
+              "RelativeToolTip": "OKR\\Models\\MilestoneTask.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAADwvxYAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T07:47:03.503Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Views\\Project\\Create.cshtml",
+              "RelativeDocumentMoniker": "OKR\\Views\\Project\\Create.cshtml",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Views\\Project\\Create.cshtml",
+              "RelativeToolTip": "OKR\\Views\\Project\\Create.cshtml",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAD0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-18T06:12:15.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MilestoneController.cs",
               "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Controllers\\MilestoneController.cs",
               "RelativeDocumentMoniker": "OKR\\Controllers\\MilestoneController.cs",
               "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Controllers\\MilestoneController.cs",
               "RelativeToolTip": "OKR\\Controllers\\MilestoneController.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAAwE4AAAAtAAAA",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAgwGgAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-17T05:27:33.601Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateMilestone.cshtml",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Views\\Milestone\\CreateMilestone.cshtml",
+              "RelativeDocumentMoniker": "OKR\\Views\\Milestone\\CreateMilestone.cshtml",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Views\\Milestone\\CreateMilestone.cshtml",
+              "RelativeToolTip": "OKR\\Views\\Milestone\\CreateMilestone.cshtml",
+              "ViewState": "AQIAAAwBAAAAAAAAAADwvwYBAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T05:28:17.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "Milestone.cs",
+              "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Models\\Milestone.cs",
+              "RelativeDocumentMoniker": "OKR\\Models\\Milestone.cs",
+              "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Models\\Milestone.cs",
+              "RelativeToolTip": "OKR\\Models\\Milestone.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T05:51:23.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MilestoneViewModel.cs",
               "DocumentMoniker": "D:\\Antu\\OKR_Team\\OKR\\Models\\ViewModels\\MilestoneViewModel.cs",
               "RelativeDocumentMoniker": "OKR\\Models\\ViewModels\\MilestoneViewModel.cs",
               "ToolTip": "D:\\Antu\\OKR_Team\\OKR\\Models\\ViewModels\\MilestoneViewModel.cs",
               "RelativeToolTip": "OKR\\Models\\ViewModels\\MilestoneViewModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAABAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAkwC0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-17T05:25:32.329Z"
+              "WhenOpened": "2024-04-17T05:25:32.329Z",
+              "EditorCaption": ""
             }
           ]
         }
